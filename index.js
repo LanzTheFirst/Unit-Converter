@@ -1,8 +1,10 @@
 const convertBtn = document.getElementById("convert-btn")
 const inputField = document.querySelector('[data-function="expand"]');
+
 inputField.addEventListener('input', () => {
   inputField.style.width = (inputField.value.length + 1) + 'ch'; // Adjust width
 });
+
 function convertUnits(){
   const inputNumber = document.getElementById("input-number").value
   const lowerContainer = document.getElementById("lower-container")

@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #1F2937;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+#container{
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+}
+
+#upper-container{
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6943FF;
+}
+label {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#input-number{
+  border-radius: 5px;
+  border: 3px solid #B295FF;
+  background: inherit;
+  color: #fff;
+  outline-style: none;
+  margin-bottom: 30px;
+  min-width: 120px;
+  height: 100px;
+  line-height: 24.39px;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 800;
+}
+
+#convert-btn{
+  width: 120px;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#lower-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.lc-inner{
+  width: 80%;
+  background: #273549;
+  height: 110px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.lc-inner h3{
+  color: #CCC1FF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.lc-inner p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media (max-width: 500px) {
+  label {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  #input-number{
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+    margin-bottom: 20px;
+    min-width: 100px;
+    height: 80px;
+    line-height: 20px;
+    font-size: 40px;
+  }
+
+  #convert-btn{
+    width: 100px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .lc-inner{
+    width: 93%;
+    height: 130px;
+    margin-bottom: 25px;
+  }
+  .lc-inner h3{
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .lc-inner p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
